@@ -219,10 +219,10 @@ do {
 //   console.log(i)
 // }
 
-const max = 10;
+const max = 10
 
 for (let i = 0; i < max; i += 1) {
-  console.log(`${max} % ${i} = `, max % i);
+  console.log(`${max} % ${i} = `, max % i)
 }
 
 //break прекратить работу досрочно
@@ -234,17 +234,69 @@ for (let i = 0; i < max; i += 1) {
 //   }
 // }
 
-let num1 = 0;
-for ( ; num1 < 5; num1 ++) {
-  console.log (num1)
-  if (num1 == 3) break;
+let num1 = 0
+for (; num1 < 5; num1++) {
+  console.log(num1)
+  if (num1 == 3) break
 }
-console.log ( `Работа окончена, num1 = ${num1}`)
+console.log(`Работа окончена, num1 = ${num1}`)
 
-// continue - досрочно прекратить выполнение части тела и перейти к выполнению следующего круга . В данном примере пропущено 2 
-let num2= 0;
-for ( ; num2 < 5; num2 ++) {
- 
-  if (num2 == 3) continue;
-  console.log (num2)
+// continue - досрочно прекратить выполнение части тела и перейти к выполнению следующего круга . В данном примере пропущено 2
+let num2 = 0
+for (; num2 < 5; num2++) {
+  if (num2 == 3) continue
+  console.log(num2)
 }
+
+// ВЕТВЛЕНИЯ Инструкция IF
+let mess = 'Привет Ирина'
+if (2 > 1) {
+  // код выполнится толко если выражение в () вернет true
+  console.log(mess)
+}
+
+
+let cost = 0;
+const subscription = 'pro';
+
+if (subscription === 'pro') {
+  cost = 100;
+}
+
+console.log(cost);
+
+let ira = 100
+let mama = 'мама и Ира - Бугаенко'
+if (ira === 100){
+  console.log(mama); 
+}
+
+// Инструкция if...else - если первое условие true то оно віводится в консоль , если первое условие fasle то в консоль выводится второе выражение
+let mess1 = 'Привети Ирина !'
+let numm1 = 5;
+if (numm1 >100){
+  console.log(mess1)
+} else {
+  console.log('Привет Василисонька!') 
+}
+
+//Инструкция else...if 
+//Расширяет синтаксис оператора if...else тем, что после else снова добавляется оператор if.
+
+let sms = 'Привет Ирина!'
+let nom = 5;
+if (nom > 50){
+  console.log ('Привет мама!');
+} else if  (nom > 30){
+  console.log ('Привет  Папа!');
+} else if  (nom > 20){
+  console.log ('Привет Василиса!');
+} else if  (nom > 2){
+  console.log ('Привет Алекс!');
+} 
+
+//Тернарный оператор ?
+let hom = 'Hello';
+let homEnd = (5>7)? ' Visi!': ' Aleks!';
+hom +=homEnd;
+console.log(hom)
