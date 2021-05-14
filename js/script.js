@@ -168,5 +168,83 @@ const string = 'Привет'
 console.log(string.indexOf('рив'))
 
 console.log(string.includes('рив'))
+let string1 = 'ИРИНА'
+console.log(string1.startsWith('РИН'))
+console.log(string1.endsWith('А'))
+//вывести часть строки
+const texst10 = 'Привет!'
+console.log(texst10.slice(1, 2))
+console.log(texst10.slice(-2, -1))
+console.log(texst10.slice(1))
 
-console.log(string)
+//Циклы
+//Цикл WHILE
+// let numSeven = 3
+// while (numSeven < 25) {
+//   console.log(numSeven)
+//   numSeven++
+// }
+// let num = 5;
+// while (num){
+//   console.log (num);
+//   num --;
+// }
+let counter = 0
+
+while (counter < 10) {
+  console.log(counter)
+  counter += 1
+}
+
+let clientCounter = 18
+const maxClients = 25
+
+while (clientCounter < maxClients) {
+  console.log(clientCounter)
+  clientCounter += 1
+}
+
+//  do while
+
+let num = 0
+do {
+  console.log(num)
+  num++
+} while (num < 10)
+
+//for
+// const max = 10
+
+// for (let i = 0; i < max; i += 1) {
+//   console.log(i)
+// }
+
+const max = 10;
+
+for (let i = 0; i < max; i += 1) {
+  console.log(`${max} % ${i} = `, max % i);
+}
+
+//break прекратить работу досрочно
+
+// for (let i = 0; i < 10; i += 1) {
+//   if (i === 5) {
+//     console.log('Дошли до 5-й итерации, прерываем цикл!');
+//     break;
+//   }
+// }
+
+let num1 = 0;
+for ( ; num1 < 5; num1 ++) {
+  console.log (num1)
+  if (num1 == 3) break;
+}
+console.log ( `Работа окончена, num1 = ${num1}`)
+
+// continue - досрочно прекратить выполнение части тела и перейти к выполнению следующего круга . В данном примере пропущено 2 
+let num2= 0;
+for ( ; num2 < 5; num2 ++) {
+ 
+  if (num2 == 3) continue;
+  console.log (num2)
+}
